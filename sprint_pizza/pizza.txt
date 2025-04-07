@@ -1,0 +1,7 @@
+-- Tabela Pizza
+CREATE TABLE pizza (
+id_pizza SERIAL PRIMARY KEY,
+nome_pizza VARCHAR(50) NOT NULL,
+descricao_pizza VARCHAR(200) NOT NULL,
+valor_pizza NUMERIC(5,2) NOT NULL
+);
