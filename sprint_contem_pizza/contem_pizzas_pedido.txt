@@ -1,0 +1,10 @@
+-- Tabela Contém Pizzas do Pedido
+CREATE TABLE contem_pizzas_pedido(
+id_contemPizza SERIAL PRIMARY KEY,
+id_pedido INTEGER NOT NULL,
+id_pizza INTEGER NOT NULL,
+quantidade INTEGER NOT NULL,
+valor_contemPizza NUMERIC(6,2) NOT NULL,
+FOREIGN KEY (id_pedido) REFERENCES pedido(id_pedido),
+FOREIGN KEY (id_pizza) REFERENCES pizza(id_pizza)
+);
